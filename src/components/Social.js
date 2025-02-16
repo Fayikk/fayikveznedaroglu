@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import '../styles/Social.css';
 
 function Social() {
