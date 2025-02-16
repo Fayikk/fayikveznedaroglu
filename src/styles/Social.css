@@ -1,0 +1,145 @@
+.social-container {
+    padding: 2rem 2rem 3rem;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-top: -2rem; /* Connect with Hero section */
+    position: relative;
+    min-height: auto; /* Override the default section min-height */
+}
+
+.social-container h2 {
+    color: #ff7b00;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.social-container h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ff7b00;
+}
+
+.social-description {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-name {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Social Icons Specific Colors */
+.linkedin {
+    color: #0077b5;
+}
+
+.github {
+    color: #333;
+}
+
+.twitter {
+    color: #1da1f2;
+}
+
+.youtube {
+    color: #ff0000;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover .social-name {
+    color: #ff7b00;
+}
+
+@media (max-width: 768px) {
+    .social-container {
+        padding: 3rem 1rem;
+    }
+    
+    .social-links {
+        gap: 1rem;
+    }
+    
+    .social-link {
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social-container {
+        padding: 1.5rem 1rem 2rem;
+        margin-top: -1rem;
+    }
+
+    .social-container h2 {
+        font-size: 2rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-link {
+        min-width: calc(50% - 1rem);
+        padding: 0.8rem;
+    }
+
+    .social-icon {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .social-description {
+        font-size: 0.9rem;
+    }
+
+    .social-link {
+        min-width: calc(100% - 1rem);
+    }
+
+    .social-name {
+        font-size: 0.9rem;
+    }
+}

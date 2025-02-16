@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-top: 60px; /* Account for fixed navbar */
 }
 
 .App-logo {
@@ -35,4 +36,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+section {
+  min-height: 80vh; /* Reduced from 100vh */
+  padding: 1.5rem; /* Reduced from 2rem */
+  scroll-margin-top: 60px; /* For smooth scrolling with fixed header */
+}
+
+@media screen and (max-width: 768px) {
+    .App {
+        padding-top: 120px; /* Account for expanded mobile navbar */
+    }
+
+    section {
+        min-height: auto;
+        padding: 1rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }

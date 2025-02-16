@@ -1,0 +1,90 @@
+.hero-section {
+    min-height: 70vh; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    padding-bottom: 4rem; /* Add extra padding at bottom */
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Reduced from 2rem */
+}
+
+.hero-content h1 {
+    color: #ff7b00;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.profile-image {
+    width: 250px; /* Increased from 200px */
+    height: 250px; /* Increased from 200px */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ff7b00;
+    box-shadow: 0 4px 12px rgba(255, 123, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 200px; /* Increased from 150px */
+        height: 200px; /* Increased from 150px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
