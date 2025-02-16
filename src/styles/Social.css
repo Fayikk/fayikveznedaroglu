@@ -1,6 +1,6 @@
 .social-container {
-    padding: 2rem 2rem 3rem;
-    background-color: #f7f7f7;
+    padding: 3rem 2rem 3rem;
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
     text-align: center;
     margin-top: -2rem; /* Connect with Hero section */
     position: relative;
@@ -51,18 +51,26 @@
     text-decoration: none;
     padding: 1rem;
     border-radius: 12px;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     min-width: 120px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform-origin: center;
 }
 
 .social-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .social-name {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    background: linear-gradient(45deg, #ff7b00, #ff9a44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Social Icons Specific Colors */
@@ -83,13 +91,17 @@
 }
 
 .social-link:hover {
-    transform: translateY(-5px);
-    background-color: #f8f9fa;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 15px 30px rgba(255, 123, 0, 0.1);
 }
 
 .social-link:hover .social-name {
     color: #ff7b00;
+}
+
+.social-link:hover .social-icon {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
